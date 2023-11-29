@@ -46,11 +46,11 @@ function setup() {
       "  Alexa Zhang",
       "  孙卓雅",
       "  尹玥",
-      "  Paul E. Carrington",
+      "  Paul Carrington",
       "  Hannah Chang",
       "  Wang Yi",
-      "  Mathers Laurence P",
-      "  Storey Dustin Seth",
+      "  Brian Gagan",
+      "  Neil Purdy",
       "  夏云鹏",
       "  孙佳慧",
       "  李丽阳",
@@ -61,7 +61,8 @@ function setup() {
       "  鹿洛",
       "  李朝江",
       "  Ophelia Kung",
-      "  梁萌"
+      "  梁萌",
+      "  Robert Yan"
     ]
   
   noLoop();
