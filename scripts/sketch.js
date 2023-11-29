@@ -85,7 +85,7 @@ function pickOne() {
     nameList = removeArrayIndex(nameList, num);
     fourthCounter += 1;
   }
-  if (fourthCounter == 8 && state == "pickFourth") {
+  if (fourthCounter == 9 && state == "pickFourth") {
     state = "fourthCompleted";
     Button1.html("Draw Third Prize")
     noLoop()
