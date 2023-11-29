@@ -189,7 +189,7 @@ function drawText(){
   text(thirdPeople, 110, upperMargin+paragraphHeight*2 + lineHeight*6)
   
   text('Fourth Prize: USD 100', 40, upperMargin+paragraphHeight*3 + lineHeight*6);
-  text('Number of Prizes: 8', 40, upperMargin+paragraphHeight*3 + lineHeight*7);
+  text('Number of Prizes: 9', 40, upperMargin+paragraphHeight*3 + lineHeight*7);
   text('Winner: ', 40, upperMargin+paragraphHeight*3 + lineHeight*8)
   text(fourthPeople, 110, upperMargin+paragraphHeight*3 + lineHeight*8)
 }
