@@ -33,6 +33,7 @@ function setup() {
   //Draw background
   //backgroundImg = loadImage('https://github.com/ChrisFeng6/platanus.io/blob/main/asset/bg_1x.png'); 
   backgroundImg = loadImage('assets/bg_1x.png'); 
+  background(backgroundImg);
   //draw button
   let col = color(234, 204, 144, 100);
   let whiteCol = color(255,255,255);
