@@ -28,12 +28,9 @@ let backgroundImg;
 
 
 function setup() {
+  // this has to match the size of the background image
   createCanvas(1456, 816); 
   frameRate(30);
-  //Draw background
-  //backgroundImg = loadImage('https://github.com/ChrisFeng6/platanus.io/blob/main/asset/bg_1x.png'); 
-  backgroundImg = loadImage('assets/bg_1x.png'); 
-  background(backgroundImg);
   //draw button
   let col = color(234, 204, 144, 100);
   let whiteCol = color(255,255,255);
@@ -74,6 +71,12 @@ function setup() {
   
   noLoop();
 }
+
+// to preload image before the first draw command
+function preload(){
+  backgroundImg = loadImage('assets/bg_1x.png'); 
+}
+
 
 function pickOne() {
   // Init
@@ -168,7 +171,6 @@ function pickOne() {
 }
 
 function draw() {
-  background(10);
   background(backgroundImg);
   if (state != "init") {
    drawFlashing();
