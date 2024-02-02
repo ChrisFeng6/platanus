@@ -183,6 +183,7 @@ function drawText(){
   let lineHeight = 25;
   let paragraphHeight = 50
   textSize(20);
+  fill('white');
   text('First Prize: USD 1000', 40, upperMargin);
   text('Number of Prizes: 1', 40, upperMargin+lineHeight);
   text('Winner: ', 40, upperMargin+lineHeight*2)
