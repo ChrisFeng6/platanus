@@ -168,6 +168,7 @@ function pickOne() {
 
 function draw() {
   background(backgroundImg);
+  console.log('no');
   if (state != "init") {
    drawFlashing();
   }
