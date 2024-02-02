@@ -26,13 +26,16 @@ let firstPeople = [];
 
 
 function setup() {
-  createCanvas(1400, 800); 
+  createCanvas(1456, 816); 
   frameRate(30);
-  Button1 = createButton("Draw Fourth Prize");
-  Button1.position(40, 210);
+  //Draw background
   let col = color(234, 204, 144, 100);
-  Button1.style('background-color', col);
+  //backgroundImg;
+  //draw button
   let whiteCol = color(255,255,255);
+  Button1 = createButton("Draw Fourth Prize");
+  Button1.style('background-color', col);
+  Button1.position(40, 210);
   Button1.style('border', whiteCol);
   Button1.style('border-radius', 50);
   Button1.style('font-size', 50);
@@ -59,10 +62,10 @@ function setup() {
       "  王荀",
       "  冯昱鹏",
       "  鹿洛",
+      "  Robert Yan",
       "  李朝江",
       "  Ophelia Kung",
       "  梁萌",
-      "  Robert Yan"
     ]
   
   noLoop();
@@ -85,7 +88,7 @@ function pickOne() {
     nameList = removeArrayIndex(nameList, num);
     fourthCounter += 1;
   }
-  if (fourthCounter == 9 && state == "pickFourth") {
+  if (fourthCounter == 8 && state == "pickFourth") {
     state = "fourthCompleted";
     Button1.html("Draw Third Prize")
     noLoop()
@@ -127,7 +130,7 @@ function pickOne() {
     nameList = removeArrayIndex(nameList, num);
     secondCounter += 1;
   }
-  if (secondCounter == 3 && state == "pickSecond") {
+  if (secondCounter == 4 && state == "pickSecond") {
     state = "secondCompleted";
     Button1.html("Draw First Prize")
     noLoop()
@@ -179,7 +182,7 @@ function drawText(){
   text(firstPeople, 110, upperMargin+lineHeight*2)
   
   text('Second Prize: USD 500', 40, upperMargin+paragraphHeight + lineHeight*2);
-  text('Number of Prizes: 3', 40, upperMargin+paragraphHeight + lineHeight*3);
+  text('Number of Prizes: 4', 40, upperMargin+paragraphHeight + lineHeight*3);
   text('Winner: ', 40, upperMargin+paragraphHeight + lineHeight*4)
   text(secondPeople, 110, upperMargin+paragraphHeight + lineHeight*4)
   
@@ -189,7 +192,7 @@ function drawText(){
   text(thirdPeople, 110, upperMargin+paragraphHeight*2 + lineHeight*6)
   
   text('Fourth Prize: USD 100', 40, upperMargin+paragraphHeight*3 + lineHeight*6);
-  text('Number of Prizes: 9', 40, upperMargin+paragraphHeight*3 + lineHeight*7);
+  text('Number of Prizes: 8', 40, upperMargin+paragraphHeight*3 + lineHeight*7);
   text('Winner: ', 40, upperMargin+paragraphHeight*3 + lineHeight*8)
   text(fourthPeople, 110, upperMargin+paragraphHeight*3 + lineHeight*8)
 }
