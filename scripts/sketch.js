@@ -23,15 +23,18 @@ let thirdPeople = [];
 let secondPeople = [];
 let firstPeople = [];
 
+let backgroundImg;
+
 
 
 function setup() {
   createCanvas(1456, 816); 
   frameRate(30);
   //Draw background
-  let col = color(234, 204, 144, 100);
-  //backgroundImg;
+  //backgroundImg = loadImage('https://github.com/ChrisFeng6/platanus.io/blob/main/asset/bg_1x.png'); 
+  backgroundImg = loadImage('assets/bg_1x.png'); 
   //draw button
+  let col = color(234, 204, 144, 100);
   let whiteCol = color(255,255,255);
   Button1 = createButton("Draw Fourth Prize");
   Button1.style('background-color', col);
@@ -164,7 +167,7 @@ function pickOne() {
 }
 
 function draw() {
-  background(255);
+  background(backgroundImg);
   if (state != "init") {
    drawFlashing();
   }
@@ -209,7 +212,7 @@ function drawFlashing(){
     nameDisplayed = thirdPeople[7];
   }
   if (state == "secondCompleted") {
-    nameDisplayed = secondPeople[2];
+    nameDisplayed = secondPeople[3];
   }
   if (state == "firstCompleted") {
     nameDisplayed = firstPeople[0];
@@ -227,3 +230,5 @@ function removeArrayIndex(original_arr, i){
   const copyWithoutThirdElement = halfBeforeTheUnwantedElement.concat(halfAfterTheUnwantedElement);
   return copyWithoutThirdElement
 }
+    
+    
