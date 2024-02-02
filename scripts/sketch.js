@@ -227,5 +227,3 @@ function removeArrayIndex(original_arr, i){
   const copyWithoutThirdElement = halfBeforeTheUnwantedElement.concat(halfAfterTheUnwantedElement);
   return copyWithoutThirdElement
 }
-    
-    
