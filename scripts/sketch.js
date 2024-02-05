@@ -203,7 +203,7 @@ function drawText(){
 
   // draw prize text
   textSize(prizeTextSize);
-  text('First Prize $1000', centerX, upperMargin);
+  text('First Prize: $1000', centerX, upperMargin);
   text('Second Prize: $500', centerX, upperMargin+paragraphHeight + lineHeight*1);
   text('Third Prize: $200', centerX, upperMargin+paragraphHeight*2 + lineHeight*2);
   text('Fourth Prize: $100', centerX, upperMargin+paragraphHeight*3 + lineHeight*3);
