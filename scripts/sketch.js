@@ -44,7 +44,7 @@ function setup() {
   Button1.style('background-color', transparentCol);
   Button1.position(canvasWidth/2-buttonWidth/2, 185);
   Button1.style('border', '2px solid white');
-  Button1.style('font-size', '20px');
+  Button1.style('font-size', '16px');
   Button1.style('color', 'white');
   Button1.style('border-radius', '10px');
   Button1.size(buttonWidth,45)
@@ -280,6 +280,9 @@ function drawFlashing(){
   }
   if (state == "firstCompleted") {
     nameDisplayed = firstPeople[0];
+  }
+  if (state == "pickFirst"){
+    nameDisplayed = "";
   }
   text(nameDisplayed, canvasWidth/2-15, 135);
 }
